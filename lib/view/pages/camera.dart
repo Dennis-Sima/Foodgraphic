@@ -193,15 +193,18 @@ class _CameraState extends State<Camera> {
               ),
             ),
             SizedBox(height: 30),
-            TextFormField(
-              minLines: 3,
-              maxLines: 10,
-              keyboardType: TextInputType.multiline,
-              decoration: InputDecoration(
-                hintText: 'Description',
-                hintStyle: TextStyle(color: Colors.grey),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(20.0)),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: TextFormField(
+                minLines: 3,
+                maxLines: 10,
+                keyboardType: TextInputType.multiline,
+                decoration: InputDecoration(
+                  hintText: 'Description',
+                  hintStyle: TextStyle(color: Colors.grey),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                  ),
                 ),
               ),
             ),
