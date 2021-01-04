@@ -1,6 +1,7 @@
 # Foodgraphic
 
-A new Flutter project.
+Foodgraphic is a social media app about food. 
+Users can share their cooking experiences with other friends and the world.
 
 ## Getting Started
 
