@@ -46,7 +46,7 @@ class _CameraState extends State<Camera> {
   }
 
   // Function to open a local gallery
-  Future openGalley() async {
+  Future openGallery() async {
     var galleryImage = await _picker.getImage(source: ImageSource.gallery);
     final File file = File(galleryImage.path);
     setState(() {
@@ -84,13 +84,13 @@ class _CameraState extends State<Camera> {
                 MaterialButton(
                   color: Colors.green[900],
                   child: Text(
-                    "Open Galley",
+                    "Open Gallery",
                     style: TextStyle(
                       color: Colors.white,
                     ),
                   ),
                   onPressed: () {
-                    openGalley();
+                    openGallery();
                   },
                 ),
               ],

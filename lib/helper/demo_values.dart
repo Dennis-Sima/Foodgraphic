@@ -15,7 +15,7 @@ class DemoValues {
     ),
     UserModel(
       id: "2",
-      name: "DenSim26",
+      name: "Dennis Sima",
       email: "SIM18354@spengergasse.com",
       image: "assets/images/user.png",
       followers: 456,
@@ -43,55 +43,44 @@ class DemoValues {
   ];
 
   static final String _body =
-      """Aspernatur omnis consequatur dignissimos recusandae non. Praesentium nihil earum. Porro perspiciatis a velit doloremque consequatur impedit. Autem odio sed qui consequatur laboriosam sapiente omnis sit. Tenetur blanditiis iure molestias quidem odit numquam sunt aliquam.
- 
-Vitae libero perferendis voluptate et quasi aut impedit fuga. Maiores suscipit fugiat a est molestiae voluptas quasi earum recusandae. Ut omnis excepturi ut dolore ab.
- 
-Quia quo quisquam velit adipisci dolorem adipisci voluptatem. Eum ut quae et dolorem sapiente. Ut reprehenderit et ut voluptatum saepe et voluptatem. Sit eveniet quaerat.
+      """Frisches Baguette bestrichen mit selbstgemachter Mayonnaise!
 
-Sit necessitatibus voluptatem est iste nihil nulla. Autem quasi sit et. Qui veniam fugit autem. Minima error deserunt fuga dolorum rerum provident velit.
- 
-Quod necessitatibus vel laboriosam ut id. Ab eaque eos voluptatem beatae tenetur repellendus adipisci repudiandae quisquam. Quis quam harum aspernatur nulla. Deleniti velit molestiae.
- 
-Repudiandae sint soluta ullam sunt eos id laborum. Veniam molestiae ipsa odit soluta in rerum amet. Deserunt rerum vero est eaque voluptas aspernatur ut voluptatem. Sint sed enim.""";
+Als nächstes werden die Gurken in das Baguette gelegt. Eingelegte und feingeschnittene Karotten werden gleichmäßig im Baguette verteilt. 
+
+Im nächsten Schritt wird das Fleisch, Wahlweise Huhn, Bauchfleisch oder Tofu, hinzugefügt. Nun folgt ein wenig Rotkraut und als Topping obendrauf können geriebene Erdnüsse und Röstzwiebel draufgelegt werden. 
+
+Die wichtigste Zutat, der Koriander darf natürlich nicht fehlen!""";
 
   static final List<CommentModel> _comments = <CommentModel>[
     CommentModel(
-      comment: "Eveniet nesciunt distinctio sint ut. ",
-      user: users[0],
-      time: DateTime(2017, 6, 30),
-    ),
-    CommentModel(
-      comment: "Et facere a eos accusantium culpa quaerat in fugiat suscipit. ",
+      comment: "Wow, sieht richtig lecker aus!",
       user: users[2],
       time: DateTime(2019, 4, 30),
     ),
     CommentModel(
-      comment: "Necessitatibus pariatur harum deserunt cum illum ut.",
+      comment: "Muss ich umbedingt auch mal zubereiten ;)",
       user: users[1],
       time: DateTime(2018, 5, 30),
     ),
     CommentModel(
-      comment:
-          "Accusantium neque quis provident voluptatem labore quod dignissimos eum quaerat. ",
-      user: users[2],
+      comment: "Healthy healthy kann ich nur sagen...",
+      user: users[3],
       time: DateTime(2017, 6, 30),
     ),
     CommentModel(
-      comment:
-          "Accusantium neque quis provident voluptatem labore quod dignissimos eum quaerat. ",
+      comment: "Bist du deppat ist das gut",
       user: users[1],
       time: DateTime(2019, 4, 30),
     ),
     CommentModel(
-      comment: "Neque est ut rerum vel sunt harum voluptatibus et. ",
-      user: users[0],
+      comment:
+          "Kannst du sagen, wie lang du ungefähr gebraucht hast? Möchte das am Wochenende auch machen...",
+      user: users[2],
       time: DateTime(2018, 5, 30),
     ),
     CommentModel(
-      comment:
-          "Hic accusantium minus fuga exercitationem id aut expedita doloribus. ",
-      user: users[1],
+      comment: "Hoffentlich hast du nicht zu viele davon verdrückt - hahaha",
+      user: users[3],
       time: DateTime(2017, 6, 30),
     ),
   ];
@@ -100,11 +89,11 @@ Repudiandae sint soluta ullam sunt eos id laborum. Veniam molestiae ipsa odit so
     PostModel(
       id: "1",
       author: users[0],
-      title: "Family Meal",
-      summary: "Als Beilage mit Salad :)",
-      body: "This is a short body.",
-      imageURL: "assets/images/schnitzel.jpg",
-      postTime: DateTime(2019, 11, 27, 7, 36),
+      title: "Bahn mi",
+      summary: "Fresh and Homemade",
+      body: _body,
+      imageURL: "assets/images/bahnmi.png",
+      postTime: DateTime.now(),
       reacts: 123,
       views: 456,
       comments: _comments,
@@ -124,8 +113,9 @@ Repudiandae sint soluta ullam sunt eos id laborum. Veniam molestiae ipsa odit so
     PostModel(
       id: "3",
       author: users[3],
-      title: "Fisch geangelt",
-      summary: "Gives shadow and fruit. Absolute win, no?",
+      title: 'Leckerer Fisch',
+      summary:
+          "Fischer's Fritz fischt frische Fische. Frische Fische fischen Fischer's Fritz.",
       body: _body * 2,
       imageURL: "assets/images/fisch.jpg",
       postTime: DateTime(2019, 1, 12),
@@ -137,7 +127,7 @@ Repudiandae sint soluta ullam sunt eos id laborum. Veniam molestiae ipsa odit so
       id: "3",
       author: users[2],
       title: "Power Food",
-      summary: "Gives shadow and fruit. Absolute win, no?",
+      summary: "After Workout Snack!!!",
       body: _body * 2,
       imageURL: "assets/images/omlett.jpg",
       postTime: DateTime(2019, 1, 12),
@@ -149,7 +139,7 @@ Repudiandae sint soluta ullam sunt eos id laborum. Veniam molestiae ipsa odit so
       id: "4",
       author: users[3],
       title: "Zuckersüß",
-      summary: "Gives shadow and fruit. Absolute win, no?",
+      summary: "Achtung Kalorienbombe :D",
       body: _body * 2,
       imageURL: "assets/images/tiramesu.jpg",
       postTime: DateTime(2019, 1, 12),
