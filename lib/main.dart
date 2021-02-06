@@ -1,3 +1,4 @@
+import 'package:Foodgraphic/view/pages/scanner.dart';
 import 'package:flutter/material.dart';
 import 'package:Foodgraphic/view/pages/home_page.dart';
 import 'package:Foodgraphic/view/presentation/themes.dart';
@@ -19,7 +20,7 @@ class Foodgraphic extends StatelessWidget {
           body1: TextThemes.body1,
         ),
       ),
-      home: HomePage(),
+      home: ScanShopPage(),
       debugShowCheckedModeBanner: false,
     );
   }
